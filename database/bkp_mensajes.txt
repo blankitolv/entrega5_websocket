@@ -1,52 +1,12 @@
 [
   {
     "user": "lucasvega2@gmail.com",
-    "msj": "whatsaaaaaaaaaa",
-    "date": "22/02/2022 02:11:34"
+    "msj": "Hola",
+    "date": "22/02/2022 16:09:49"
   },
   {
     "user": "lucasvega2@gmail.com",
-    "msj": "123222",
-    "date": "22/02/2022 02:24:48"
-  },
-  {
-    "user": "lucasvega2@gmail.com",
-    "msj": "123222",
-    "date": "22/02/2022 02:25:30"
-  },
-  {
-    "user": "lucasvega2@gmail.com",
-    "msj": "123222",
-    "date": "22/02/2022 02:27:12"
-  },
-  {
-    "user": "lucasvega2@gmail.com",
-    "msj": "ahora chi",
-    "date": "22/02/2022 02:29:17"
-  },
-  {
-    "user": "lucasvega2@gmail.com",
-    "msj": "bounce",
-    "date": "22/02/2022 02:38:23"
-  },
-  {
-    "user": "lus",
-    "msj": "arr",
-    "date": "22/02/2022 02:38:47"
-  },
-  {
-    "user": "ahora si que si",
-    "msj": "o no amigo",
-    "date": "22/02/2022 02:40:02"
-  },
-  {
-    "user": "lucasvega2@gmail.com",
-    "msj": "sdddd",
-    "date": "22/02/2022 02:42:32"
-  },
-  {
-    "user": "das@",
-    "msj": "ss",
-    "date": "22/02/2022 12:50:29"
+    "msj": "all works! greate!",
+    "date": "22/02/2022 16:10:00"
   }
 ]
