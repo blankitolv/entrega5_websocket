@@ -1,0 +1,7 @@
+.fecha {
+   font-size: 9pt;
+   color:gray;
+}
+.animate__animated .animate__bounceIn {
+   --animate-duration: 2s;
+ }

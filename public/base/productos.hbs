@@ -1,0 +1,30 @@
+{{#if dataParse.length}}
+<div class="container">
+   <div class="row">
+      {{#each dataParse}}
+         <div class="col-lg-4 d-flex align-items-stretch" data-id-type="{{this.id}}">
+            <div class="card mt-2 d-flex align-items-center justify-content-center text-dark bg-light" style="width:18rem">
+               <img src="{{this.thumbnail}}" width=200 heigth=100 class=card-img-top alt="{{this.title}}">
+               <div class="card-body">
+                  <h5 class="card-title">
+                     {{this.title}}
+                  </h5>
+                  <p class="card-text">
+                     {{this.price}}
+                  </p>
+               </div>
+               <div class="card-footer text-muted col-12">
+                  <a href="#" class="btn btn-secondary col-12">Buy</a>
+               </div>
+            </div>
+         </div>
+      {{/each}}
+   </div>
+</div>
+{{else}}
+<div class="container">
+   <div class="row">
+      <h6>No hay productos...</h6>
+   </div>
+</div>
+{{/if}}

@@ -1,0 +1,20 @@
+{{#if data.length}}
+<div class="container">
+      {{#each data}}
+      <div class="row">
+         <div class="col-2"></div>
+         <div class="card col-8 {{#if @last}}animate__animated animate__bounceIn{{/if}}">
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item">{{this.user}} <span class="fecha">{{this.date}}</span></li>
+               <li class="list-group-item">{{this.msj}} -- {{@key}} </li>
+            </ul>
+         </div>
+         <div class="col-2"></div>
+      </div>
+      {{/each}}
+</div>
+{{else}}
+<div class="container">
+   <h6>No hay mensajes que mostrar</h6>
+</div>
+{{/if}}
