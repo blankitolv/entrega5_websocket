@@ -62,17 +62,32 @@ btn_enviar.addEventListener('click',(e)=>{
       document.querySelector('#thumbnail').value=""
    } 
 })
-document.querySelector('#textarea_chat').value="123222"
-document.querySelector('#input_email').value="lucasvega2@gmail.com"
+function validarEmail(x) {
+   let arroba = x.indexOf('@');
+   let puntocom = x.indexOf('.');
+   if (arroba != -1 && puntocom != -1) {
+      return true
+   } else {
+      return false
+   }
+}
 const send_msg = document.querySelector('#send_msg')
 send_msg.addEventListener('click',(e)=>{
-   e.preventDefault();
-   textareachat=document.querySelector('#textarea_chat').value
-   inputemail=document.querySelector('#input_email').value
-   if (textareachat && inputemail) {
-      const myMsg = {user:inputemail, msj:textareachat}
-      socket.emit("msg",myMsg)
-      document.querySelector('#textarea_chat').value=""
-      document.querySelector('#input_email').value=""
+   
+   if (validarEmail(document.querySelector('#input_email').value) != false && document.querySelector('#textarea_chat').value !=""){
+      e.preventDefault();
+      textareachat=document.querySelector('#textarea_chat').value
+      inputemail=document.querySelector('#input_email').value
+      if (textareachat && inputemail) {
+         const myMsg = {user:inputemail, msj:textareachat}
+         socket.emit("msg",myMsg)
+         document.querySelector('#textarea_chat').value=""
+      }      
+   } else {
+      if (document.querySelector('#textarea_chat').value ==""){
+         alert('No puede enviar un mensaje vacío')
+      } else {
+         alert('Debe ingresar un email válido')
+      }
    }
 })

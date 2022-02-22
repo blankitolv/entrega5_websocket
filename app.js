@@ -9,6 +9,7 @@ const Container_msg = require ('./models/Container_msg')
 const oneContainer_msg = new Container_msg('./database/bkp_mensajes.txt')
 
 const moment = require ('moment')
+
 // tomamos la clase Server de socket.io
 // instanciamos en io de esa clase. y enviamos como argumento server de http
 const { Server } = require ('socket.io')
@@ -45,13 +46,6 @@ io.on('connection',async (socket)=>{
       io.sockets.emit ("allPrevMsg", await oneContainer_msg.getAll());
    })
 })
-/*
-    socket.emit('mensajes', await mensajesApi.listarAll());
-    io.sockets.emit('mensajes', await mensajesApi.listarAll());
-
-*/
-
-
 server.listen(8081,()=>{
    console.log ('listening on port 8081')
 })
